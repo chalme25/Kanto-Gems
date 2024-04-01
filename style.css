@@ -1,0 +1,283 @@
+/* Font sizes (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 /
+62 / 74 / 86 / 98 */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Rubik", sans-serif;
+  line-height: 1;
+  font-weight: 400;
+  color: #333;
+  position: relative;
+}
+
+/* Hero Section */
+
+.hero {
+  position: relative;
+  background-color: rgb(160, 224, 200);
+}
+
+.hero-img {
+  width: 100%;
+  height: 70rem;
+  object-fit: cover;
+}
+
+.hero-text {
+  position: absolute;
+  top: 10%;
+  left: 10%;
+}
+
+.hero-title {
+  font-size: 9.8rem;
+  font-weight: 700;
+  margin-bottom: 3.2rem;
+  animation: fadeInAnimation ease 3s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+.hero-desc {
+  opacity: 0;
+  font-size: 2.4rem;
+  color: #444;
+  animation: fadeInAnimation ease 3s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  animation-delay: 1.3s;
+}
+
+/* Hakone Section */
+
+.container {
+  max-width: 120rem;
+  padding: 7.4rem 3.2rem;
+  margin: 0 auto;
+}
+
+.title-text {
+  text-align: center;
+  font-size: 9.8rem;
+  font-weight: 700;
+  margin-bottom: 3.2rem;
+}
+
+.desc-text {
+  font-size: 2.4rem;
+  margin-bottom: 3.2rem;
+  color: #444;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 3.2rem;
+}
+
+.grid-5-cols {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  column-gap: 1rem;
+}
+
+.hakone {
+  background-color: rgb(160, 224, 200);
+}
+
+.hakone-img {
+  width: 100%;
+  transition: all 0.3s;
+  box-shadow: 0 0.1rem 0.5rem rgba(0, 0, 0, 0.6);
+}
+
+.js-hover:hover {
+  transform: scale(1.03);
+}
+
+/* Tsukuba */
+
+.tsukuba {
+  background-color: rgb(212, 165, 212);
+}
+
+.tsukuba-img {
+  width: 100%;
+  transition: all 0.3s;
+  box-shadow: 0 0.1rem 0.5rem rgba(0, 0, 0, 0.6);
+}
+
+/* Chiba */
+
+.chiba {
+  background-color: rgb(249, 220, 112);
+}
+
+.chiba-img {
+  width: 100%;
+  transition: all 0.3s;
+  box-shadow: 0 0.1rem 0.5rem rgba(0, 0, 0, 0.6);
+}
+
+.grid-4-cols {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 1rem;
+  row-gap: 1rem;
+}
+
+@keyframes fadeInAnimation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* Overlay */
+
+.modal {
+  /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding: 4%; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  /* background-color: rgb(0, 0, 0); Fallback color */
+  background-color: rgb(39, 38, 38, 0.9); /* Black w/ opacity */
+}
+
+.close-button {
+  border: none;
+  display: inline-block;
+  padding: 0.3rem;
+
+  vertical-align: middle;
+  overflow: hidden;
+  text-decoration: none;
+  color: inherit;
+  background-color: transparent;
+  text-align: center;
+  cursor: pointer;
+  white-space: nowrap;
+  font-weight: bold;
+  font-size: 1.6rem;
+
+  position: absolute;
+  -webkit-text-stroke-width: 0.1rem;
+  -webkit-text-stroke-color: rgb(255, 255, 255);
+}
+
+.topright {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.hidden {
+  display: none;
+}
+
+.hakone-test {
+  position: relative;
+}
+
+.o-bg {
+  position: relative;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.6);
+  height: 100%;
+  width: 100%;
+  z-index: 50;
+}
+
+.popup {
+  position: fixed;
+  top: 10%;
+  right: 10%;
+  /* background: rgba(0, 0, 0, 0.6); */
+  /* height: 100%;
+  width: 100%; */
+  height: 80%;
+  width: 80%;
+  z-index: 100;
+}
+
+.popup .hakone-img {
+  /* width: 80%;
+  height: 80%; */
+  height: 100%;
+  width: 100%;
+  /* margin-top: 5%; */
+  margin-left: auto;
+  margin-right: auto;
+
+  display: block;
+  /* top: -50%;
+  left: -50%; */
+  /* transform: translate(25%, 25%); */
+  object-fit: fill;
+  z-index: 101;
+}
+.popup .tsukuba-img {
+  width: 100%;
+  height: 100%;
+  /* margin-top: 5%; */
+  margin-left: auto;
+  margin-right: auto;
+
+  display: block;
+  /* top: -50%;
+  left: -50%; */
+  /* transform: translate(25%, 25%); */
+  object-fit: fill;
+  z-index: 101;
+}
+
+.popup .chiba-img {
+  width: 100%;
+  height: 100%;
+  /* margin-top: 5%; */
+  margin-left: auto;
+  margin-right: auto;
+
+  display: block;
+  /* top: -50%;
+  left: -50%; */
+  /* transform: translate(25%, 25%); */
+  object-fit: fill;
+  z-index: 101;
+}
+
+.popup .close-button {
+  position: absolute;
+  top: 0.5%;
+  right: 1%;
+  font-size: 4.6rem;
+  cursor: pointer;
+}
+
+.popup .close-button:hover {
+  color: #999;
+  -webkit-text-stroke-width: 0.1rem;
+  -webkit-text-stroke-color: rgb(255, 255, 255);
+}

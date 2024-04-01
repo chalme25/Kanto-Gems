@@ -1,0 +1,353 @@
+/* 1072px */
+@media (max-width: 67em) {
+  .desc-text {
+    font-size: 2rem;
+  }
+
+  /* .popup {
+    right: 15%;
+    width: 70%;
+  } */
+
+  .popup .close-button {
+    top: -1%;
+  }
+}
+
+/* 900px */
+@media (max-width: 57em) {
+  .title-text {
+    font-size: 7.4rem;
+  }
+
+  .desc-text {
+    font-size: 1.8rem;
+  }
+}
+
+/* 800px */
+@media (max-width: 50em) {
+  .hero-title {
+    font-size: 7.4rem;
+  }
+
+  .hero-desc {
+    font-size: 2rem;
+  }
+
+  .hakone-imgs,
+  .tsukuba-imgs,
+  .chiba-imgs {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 1rem;
+    row-gap: 1rem;
+  }
+
+  .container {
+    max-width: 120rem;
+    padding: 7.4rem 5.2rem;
+    margin: 0 auto;
+  }
+
+  .popup .close-button {
+    font-size: 4rem;
+  }
+}
+
+/* 740px */
+
+@media (max-width: 46.25rem) {
+  .title-text {
+    font-size: 5.2rem;
+  }
+
+  .desc-text {
+    font-size: 1.6rem;
+  }
+}
+
+/* 680px */
+
+@media (max-width: 42.5rem) {
+  .hero-title {
+    font-size: 5.2rem;
+    margin-bottom: 2.4rem;
+  }
+
+  .hero-desc {
+    font-size: 1.6rem;
+  }
+
+  .hero-img {
+    width: 100%;
+    height: 60rem;
+    object-fit: cover;
+  }
+
+  .desc-text {
+    font-size: 1.6rem;
+  }
+
+  .hakone-imgs,
+  .tsukuba-imgs,
+  .chiba-imgs {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 1rem;
+    row-gap: 1rem;
+  }
+
+  .popup {
+    right: 10%;
+    width: 80%;
+  }
+}
+
+/* 560px */
+
+@media (max-width: 35rem) {
+  .hero-title {
+    font-size: 4.4rem;
+  }
+
+  .title-text {
+    font-size: 4.4rem;
+  }
+
+  .container {
+    max-width: 120rem;
+    padding: 5.2rem 3.2rem;
+    margin: 0 auto;
+  }
+
+  .popup {
+    height: 70%;
+    top: 15%;
+  }
+
+  .popup .close-button {
+    font-size: 3.4rem;
+  }
+}
+
+/* 480px */
+
+@media (max-width: 30rem) {
+  .hero-title {
+    font-size: 3.6rem;
+    margin-bottom: 1.8rem;
+  }
+
+  .hero-img {
+    width: 100%;
+    height: 50rem;
+    object-fit: cover;
+  }
+
+  .title-text {
+    font-size: 3.6rem;
+  }
+
+  .container {
+    max-width: 120rem;
+    padding: 3.6rem 3.2rem;
+    margin: 0 auto;
+  }
+}
+
+/* 440px */
+
+@media (max-width: 27.5rem) {
+  .hero-title {
+    font-size: 3rem;
+  }
+
+  .hero-img {
+    width: 100%;
+    height: 40rem;
+    object-fit: cover;
+  }
+
+  .title-text {
+    font-size: 3rem;
+  }
+}
+
+/* 360px */
+
+@media (max-width: 22.5rem) {
+  .hero-title {
+    font-size: 2.4rem;
+  }
+
+  .hero-img {
+    width: 100%;
+    height: 35rem;
+    object-fit: cover;
+  }
+
+  .popup {
+    height: 60%;
+    top: 20%;
+  }
+}
+
+/* 336px */
+
+@media (max-width: 21rem) {
+  .popup {
+    height: 50%;
+    top: 25%;
+  }
+}
+
+/* Height */
+
+/* 340px */
+
+/* @media (max-height: 21.25rem) {
+  .popup .close-button {
+    font-size: 3.4rem;
+    top: -1%;
+  }
+}  */
+
+/* Height = 420px */
+
+@media (min-height: 0rem) and (max-height: 26.25rem) and (max-width: 50rem) {
+  .popup {
+    height: 100%;
+    width: 50%;
+    top: 0%;
+    right: 25%;
+  }
+}
+
+@media (min-height: 0rem) and (max-height: 26.25rem) and (min-width: 50rem) {
+  .popup {
+    height: 100%;
+    width: 50%;
+    top: 0%;
+    right: 25%;
+  }
+}
+
+/* Height = 480 */
+
+@media (min-height: 26.25rem) and (max-height: 30rem) and (max-width: 50rem) {
+  .popup {
+    height: 50%;
+    top: 25%;
+  }
+}
+
+/* Height = 740px */
+
+@media (min-height: 30rem) and (max-height: 46.25rem) and (max-width: 35rem) {
+  .popup {
+    height: 50%;
+    top: 25%;
+  }
+}
+
+/* Height = 818px */
+
+@media (min-height: 46.25rem) and (max-height: 51.125rem) and (max-width: 42.5rem) {
+  .popup {
+    top: 35%;
+    height: 30%;
+    width: 100%;
+    right: 0%;
+  }
+}
+
+@media (min-height: 46.25rem) and (max-height: 51.125rem) and (max-width: 35rem) {
+  .popup {
+    top: 35%;
+    height: 30%;
+    width: 100%;
+    right: 0%;
+  }
+}
+
+/* Height = 880px */
+
+@media (min-height: 51.125rem) and (max-height: 55rem) and (max-width: 42.5rem) {
+  .popup {
+    height: 70%;
+    top: 15%;
+  }
+}
+
+@media (min-height: 51.125rem) and (max-height: 55rem) and (max-width: 38.625rem) {
+  .popup {
+    height: 50%;
+    top: 25%;
+  }
+}
+
+@media (min-height: 51.125rem) and (max-height: 55rem) and (max-width: 30rem) {
+  .popup {
+    top: 35%;
+    height: 30%;
+    width: 100%;
+    right: 0%;
+  }
+
+  /* .popup .close-button {
+    font-size: 3.4rem;
+    top: -1%;
+    left: 5%;
+  } */
+}
+
+/* Height = 1024px */
+
+@media (max-width: 67rem) and (max-height: 64rem) and (min-height: 55rem) {
+  .popup {
+    height: 70%;
+    top: 15%;
+  }
+}
+
+/* @media (max-width: 57rem) and (max-height: 64rem) {
+  .popup {
+    height: 50%;
+    top: 25%;
+  }
+} */
+
+@media (max-width: 35rem) and (max-height: 64rem) and (min-height: 55rem) {
+  .popup {
+    top: 20%;
+    height: 60%;
+  }
+}
+
+@media (max-width: 30rem) and (max-height: 64rem) and (min-height: 55rem) {
+  .popup {
+    top: 35%;
+    height: 30%;
+    width: 100%;
+    right: 0%;
+  }
+}
+
+/* Height = 1024+ */
+
+@media (max-width: 50rem) and (min-height: 64rem) {
+  .popup {
+    height: 50%;
+    top: 25%;
+  }
+}
+
+@media (max-width: 42.5rem) and (min-height: 64rem) {
+  .popup {
+    top: 35%;
+    height: 30%;
+    width: 100%;
+    right: 0%;
+  }
+}
