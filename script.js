@@ -36,4 +36,12 @@ for (let i = 0; i < imgs.length; i++)
     overlay[i].classList.add("hidden");
   });
 
+for (let i = 0; i < imgs.length; i++)
+  document.addEventListener("keydown", function (e) {
+    if (e.key === "Escape") {
+      popup[i].classList.add("hidden");
+      overlay[i].classList.add("hidden");
+    }
+  });
+
 // Next Media Queries
